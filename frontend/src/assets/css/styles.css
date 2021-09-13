@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');/* importando outra fonte; essa é Ubuntu */
+:root { /* dois pontos antes, define o estilo "globalmente" */
+    --color-primary: #FF8400; /*a*/
+}
+
+html, body {
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#root { /*root, content e footer são rodapé */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.bg-primary { /* editando as cores padrões do bootstrap*/
+    background-color: var(--color-primary) !important;
+}
+
+.text-primary {/* editando as cores padrões do bootstrap*/
+    color: var(--color-primary) !important;
+}
